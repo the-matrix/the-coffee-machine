@@ -1,0 +1,25 @@
+{
+    "name": "the-matrix/the-coffee-machine",
+    "description": "Example of state machine with event handling",
+    "keywords": [
+        "state machine", "finite state machine", "workflow"
+    ],
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ashley Kitson",
+            "email": "ashley@zf4.biz"
+        }
+    ],
+    "require": {
+        "php": "~7.2",
+        "chippyash/finite-state-machine": "~1.0",
+        "crell/tukio": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chippyash\\Coffee\\": "src"
+        }
+    }
+}
