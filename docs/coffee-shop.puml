@@ -16,5 +16,6 @@ POUR_COFFEE: Do we need milk for
 POUR_COFFEE: for this drink?
 POUR_MILK --> SERVE_COFFEE: serve_coffee_milk
 POUR_COFFEE --> SERVE_COFFEE: serve_coffee
+SERVE_COFFEE --> [*]
 
 @enduml
