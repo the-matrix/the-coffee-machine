@@ -1,0 +1,20 @@
+@startuml
+hide unused attributes
+title The Coffee Shop: Coffee Maker
+
+[*] --> NEW_ORDER
+NEW_ORDER --> MAKE_COFFEE: new_order
+NEW_ORDER: Initial state
+NEW_ORDER: Order knows coffee variety required
+MAKE_COFFEE --> MAKE_MILK: with_milk
+MAKE_COFFEE: Do we need milk for
+MAKE_COFFEE: for this drink?
+MAKE_COFFEE --> POUR_COFFEE: no_milk
+MAKE_MILK --> POUR_COFFEE: milk_made
+POUR_COFFEE --> POUR_MILK: add_milk
+POUR_COFFEE: Do we need milk for
+POUR_COFFEE: for this drink?
+POUR_MILK --> SERVE_COFFEE: serve_coffee_milk
+POUR_COFFEE --> SERVE_COFFEE: serve_coffee
+
+@enduml

@@ -8,6 +8,10 @@ We use a simple coffee shop as a the use case:
 - customer walks in and orders a variety of coffee
 - the coffee making person makes it and serves it 
 
+Heres our workflow:
+
+![pics/coffee_shop.png](pics/coffee_shop.png) 
+
 ## Why
 
 State Machines are useful, but they become really useful when they are
