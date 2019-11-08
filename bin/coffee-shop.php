@@ -72,6 +72,7 @@ $listenerProvider->addListener(function(StateGraphEventable $event) use ($coffee
     }
 
     //we assume there is only ONE initial state
+    //if we had numerous products, it would be here that we'd set alternate start states
     $event->getStateGraphObject()->setState(
         $coffeeMaker->getInitialStates()->reduce(function($carry, State $state) {return $state;})
     );
